@@ -1,0 +1,20 @@
+#Connexion to rabbitmq server
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+    queue:
+      name: rabbitmqapp
+      json:
+        name: rabbitmqapp_json
+
+    exchange:
+      name: rabbitmqapp_exchange
+
+    routing:
+      key: rabbitmqapp_routing_key
+      json:
+        key: rabbitmqapp_routing_json_key
